@@ -3,8 +3,6 @@
 float b as arguments and returns their sum as a float.
 """
 
-"""task 0's modeule"""
-
 def add(a: float, b: float) -> float:
     """Add two floats"""
     return (a + b)
