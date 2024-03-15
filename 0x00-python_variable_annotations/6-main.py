@@ -1,10 +1,7 @@
 #!/usr/bin/env python3
 
-"import main function"""
 sum_mixed_list = __import__('6-sum_mixed_list').sum_mixed_list
 
-
-"""solution for main to task 6"""
 print(sum_mixed_list.__annotations__)
 mixed = [5, 4, 3.14, 666, 0.99]
 ans = sum_mixed_list(mixed)
