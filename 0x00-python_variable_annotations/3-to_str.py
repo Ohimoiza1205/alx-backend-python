@@ -1,11 +1,9 @@
 #!/usr/bin/env python3
-"""Task 3's module
+"""Write a type-annotated function to_str that takes a float n
+as argument and it returns the string representation of the float.
 """
 
 
 def to_str(n: float) -> str:
-    """Converts a floating-point number to a string
-    """
-
-    
+    """Returns the string representation of the float"""
     return str(n)
