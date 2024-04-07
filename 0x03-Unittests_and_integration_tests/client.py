@@ -14,7 +14,7 @@ from utils import (
 
 
 class GithubOrgClient:
-    """A Githib client
+    """A Githib org client
     """
     ORG_URL = "https://api.github.com/orgs/{org}"
 
@@ -34,7 +34,7 @@ class GithubOrgClient:
 
     @memoize
     def repos_payload(self) -> Dict:
-        """Memorize repos"""
+        """Memoize repos payload"""
         return get_json(self._public_repos_url)
 
     def public_repos(self, license: str = None) -> List[str]:
@@ -49,7 +49,7 @@ class GithubOrgClient:
 
     @staticmethod
     def has_license(repo: Dict[str, Dict], license_key: str) -> bool:
-        """Static: license"""
+        """Static: has_license"""
         assert license_key is not None, "license_key cannot be None"
         try:
             has_license = access_nested_map(repo, ("license", "key")) == license_key
